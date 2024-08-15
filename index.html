@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <main>
+    <div class="board">
+      <div class="title">
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+      <div class="score-board">
+        <h4 class="score-title">SCORE</h4>
+        <p class="score">0</p>
+      </div>
+    </div>
+
+    <div class="you-pick">
+      <div class="hstack">
+        <div class="select select-paper">
+          <div class="option">
+            <img src="./images/icon-paper.svg" alt="" class="paper">
+          </div>
+        </div>
+        <div class="select select-scissors">
+          <div class="option"><img src="./images/icon-scissors.svg" alt="" class="paper">
+          </div>
+        </div>
+      </div>
+      <div class="select select-rock">
+        <div class="option"><img src="./images/icon-rock.svg" alt="" class="paper">
+        </div>
+      </div>
+    </div>
+
+    <!-- revealing the house's selection -->
+    <div class="your-pick">
+      <div class="your-side">
+        <div class="select choice select-paper">
+          <div class="option">
+            <img src="./images/icon-paper.svg" alt="" class="paper">
+          </div>
+        </div>
+        <p class="u-picked">YOU PICKED</p>
+      </div>
+
+      <div class="house-pick">
+        <div class="select house-select">
+          <div class="option">
+            <img src="./images/icon-scissors.svg" alt="" class="paper house-pick-img">
+          </div>
+        </div>
+        <p class="h-picked">THE HOUSE PICKED</p>
+      </div>
+    </div>
+
+    <!-- revealing the winner and loser -->
+    <div class="result-pick">
+      <div class="your-side">
+        <div class="select select-paper" tabindex="1">
+          <div class="option">
+            <img src="./images/icon-paper.svg" alt="" class="paper">
+          </div>
+        </div>
+        <p class="u-picked">YOU PICKED</p>
+      </div>
+
+      <div class="house-pick">
+        <div class="select select-scissors">
+          <div class="option"><img src="./images/icon-scissors.svg" alt="" class="paper">
+          </div>
+        </div>
+        <p class="h-picked">THE HOUSE PICKED</p>
+      </div>
+    </div>
+
+    <div class="result">
+      <h2 class="your-fate"></h2>
+      <button class="play-again">PLAY AGAIN</button>
+    </div>
+    <button class="rules">RULES</button>
+
+    <div class="rules-sec">
+      <div class="rules-header abt-rule">
+        <h1 class="rule-head">RULES</h1>
+        <img src="./images/icon-close.svg" alt="" class="close-icon icon1">
+      </div>
+      <img src="./images/image-rules.svg" alt="" class="rule-img">
+      <img src="./images/icon-close.svg" alt="" class="close-icon icon2">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- Score
+    Rules
+  
+    You Picked
+    The House Picked
+  
+    You Win
+    You Lose
+  
+    Play Again -->
